@@ -34,3 +34,6 @@ de lo que cambió.
 ## Instalación de Livewire
 
 composer require livewire/livewire
+
+## Movernos entre branches
+git switch "el branch que quiero usar"
