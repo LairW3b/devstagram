@@ -21,6 +21,10 @@
 <!-- yield: directiva que registra el elemento como un contenedor he inyectar contenido -->
 
 <body class="bg-gray-100">
+deployment
+  <header class="p-5 border-b bg-white shadow">
+    <livewire:navbar>
+=======
   <header class="p-1 border-b bg-white shadow">
 
     {{-- <div class="container mx-auto flex justify-between items-center">
@@ -68,6 +72,7 @@
     {{-- Menu responsive --}}
     <livewire:navbar>
      
+main
   </header>
 
   <main class="container mx-auto mt-10">
