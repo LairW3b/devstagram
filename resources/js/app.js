@@ -1,10 +1,16 @@
 import Dropzone from "dropzone";
 
+deployment
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
+=======
 // Alpine
 import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
 
+main
 // Dropzon busca un elemento con dropzone pero con esto yo le doy el comportamiento
 Dropzone.autoDiscover = false;
 
@@ -17,14 +23,14 @@ const dropzone = new Dropzone('#dropzone', {
   uploadMultiple: false,
 
   // Se ejecuta automaticamente cuando dropzon es creado
-  init: function() {
-    if(document.querySelector('[name="imagen"]').value.trim()) {
+  init: function () {
+    if (document.querySelector('[name="imagen"]').value.trim()) {
       const imagenPublicada = {}
       imagenPublicada.size = 1234;
       imagenPublicada.name = document.querySelector('[name="imagen"]').value;
 
       this.options.addedfile.call(this, imagenPublicada);
-      this.options.thumbnail.call(this, imagenPublicada, `/uploads/${imagenPublicada.name}`); 
+      this.options.thumbnail.call(this, imagenPublicada, `/uploads/${imagenPublicada.name}`);
 
       imagenPublicada.previewElement.classList.add("dz-success", "dz-complete");
     }
@@ -35,7 +41,7 @@ dropzone.on("success", function (file, response) {
   document.querySelector('[name="imagen"]').value = response.imagen;
 });
 
-dropzone.on("removefile", function(){});
+dropzone.on("removefile", function () { });
 
 dropzone.on("removedfile", function () {
   document.querySelector('[name="imagen"]').value = "";
