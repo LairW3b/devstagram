@@ -1,8 +1,16 @@
 import Dropzone from "dropzone";
 
+deployment
 import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
+=======
+// Alpine
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
+
+main
 // Dropzon busca un elemento con dropzone pero con esto yo le doy el comportamiento
 Dropzone.autoDiscover = false;
 

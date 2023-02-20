@@ -5,6 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
+    deployment
       "php": "^8.1",
       "ext-gd": "*",
       "guzzlehttp/guzzle": "^7.2",
@@ -13,6 +14,16 @@
       "laravel/sanctum": "^3.0",
       "laravel/tinker": "^2.7",
       "livewire/livewire": "^2.11"
+=======
+        "php": "^8.0.2",
+        "ext-gd": "*",
+        "guzzlehttp/guzzle": "^7.2",
+        "intervention/image": "^2.7",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.11"
+main
     },
     "require-dev": {
       "fakerphp/faker": "^1.9.1",
